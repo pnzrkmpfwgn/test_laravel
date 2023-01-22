@@ -1,0 +1,872 @@
+body{
+    background:rgb(34, 33, 33);
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+   }
+   
+   a:link{
+     text-decoration: none!important;
+     text-decoration: none;
+   }
+   
+   .Navbar_Container a{
+   color:white;
+   }
+   
+   .Navbar_Container a:hover{
+      color: rgb(9, 196, 108);
+   }
+  
+  
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  :root {
+  
+    /**
+     * colors
+     */
+  
+    --dark-jungle-green: hsl(188, 63%, 7%);
+    --prussian-blue: hsl(200, 69%, 14%);
+    --raisin-black-1: hsl(227, 29%, 13%);
+    --raisin-black-2: hsl(229, 17%, 19%);
+    --yellow-green: hsl(89, 72%, 45%);
+    --orange-soda: hsl(9, 100%, 62%);
+    --cultured-1: hsl(0, 0%, 93%);
+    --cultured-2: hsl(192, 24%, 96%);
+    --misty-rose: hsl(7, 56%, 91%);
+    --alice-blue: hsl(210, 100%, 97%);
+    --seashell: hsl(8, 100%, 97%);
+    --cadet: hsl(200, 15%, 43%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --opal: hsl(180, 20%, 62%);
+    --greyblack:rgb(34, 33, 33);
+    --greeny: rgb(36,156,76);
+  
+    /**
+     * typography
+     */
+  
+   
+  
+    --fs-1: 1.875rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.375rem;
+    --fs-4: 1.125rem;
+    --fs-5: 0.875rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+  
+    /**
+     * transition
+     */
+  
+    --transition: 0.25s ease;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 100px;
+  
+    /**
+     * shadow
+     */
+  
+    --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+    --shadow-2: 0 16px 32px hsl(200, 15%, 43%);
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a { text-decoration: none; }
+  
+  a,
+  img,
+  span,
+  button { display: block; }
+  
+  button {
+    border: none;
+    background: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  address { font-style: normal; }
+  
+  .fa { pointer-events: none; }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track { background: var(--greyblack); }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--greeny);
+    border-left: 0px solid var(--white);
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+  
+  .container { padding-inline: 15px; }
+  
+  button, a { transition: var(--transition); }
+
+.has-scrollbar {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    margin-inline: -15px;
+    padding-inline: 15px;
+    scroll-padding-left: 15px;
+    padding-bottom: 60px;
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .has-scrollbar > li {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-track {
+    background: var(--cultured-2);
+    outline: 2px solid var(--cadet);
+    border-radius: 10px;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--greeny);
+    border: 1px solid var(--cultured-2);
+    border-radius: 10px;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
+
+
+
+
+  /* side navbar button */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 33, 33);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(9, 196, 108);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  #navbar-button{
+    color:rgb(9, 196, 108);
+  }
+  
+  
+  /* deneme */
+  
+  .sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 33, 33);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 00px;
+    z-index: 2;
+  }
+  
+  .sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(9, 196, 108);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav2 a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+  }
+  
+  #main2 {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  #navbar-button2{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 4rem;
+    border: 2px solid;
+    background-color: rgb(9, 196, 108);
+    border-radius: 4px;
+    padding: 5px 12px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* navbar konteynırı */
+  
+  header {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    background-color:rgb(34, 33, 33);
+  }
+
+  
+  /* navbar ve itemleri */
+
+  header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    list-style-type:none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s ease 0s;
+  }
+  
+  header a:hover {
+    color: rgb(9, 196, 108);
+  }
+    
+  
+  .NCRealEstateLogo{
+    margin-right: auto;
+    width: 88px;
+    height: 80px;
+    border-radius: 50px;
+    clip-path: circle();
+  }
+  
+  
+  
+  .Navbar-I2{
+    font-size: 24px;
+    margin-top: 25px;
+  }
+  
+  .Navbar-I3{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I4{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I5{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I6{
+    font-size: 24px;
+  }
+  
+  .Navbar-I6 button{
+    color: white;
+  }
+  
+  .Navbar-I6 button:hover ,.Navbar-I6 button:focus{
+    color: rgb(9, 196, 108);
+  }
+  
+  /* navbar-6 dropdown */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(34, 33, 33);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .show {display:block;}
+
+  
+  .Navbar-I7{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 4rem;
+    border: 2px solid;
+    background-color: green;
+    border-radius: 4px;
+    padding: 5px 12px;
+    
+  }
+  
+  .Navbar-I7:hover{
+    background:black;
+    color:green;
+    transition: all 0.5s ease 0s;
+  }
+
+
+
+ /* profile ve şifre kısmı */
+
+
+
+  input{
+    border: 2px solid;
+    color:var(--greeny);
+    border-radius: 6px;
+    padding: 15px 8px;
+    width: 350px;
+    height: 60px;
+    background-color: var(--greyblack); 
+    font-size: large;
+  }
+
+  ::placeholder{
+    color:var(--greeny);
+  }
+
+  .left-box{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+  }
+
+  
+
+  #Pro-h3{
+    font-size: 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+  }
+
+  #Cha-Pas{
+    color: var(--white);
+    display: flex;
+    justify-content: end;
+    align-self: center;
+  }
+
+  
+
+  #contact{
+    color: var(--greeny);
+  }
+
+  #contact:hover{
+    color:var(--yellow-green);
+    cursor: pointer;
+  }
+
+  #contact-p{
+    display: flex;
+    gap:6px;
+    font-size: 22px;
+    color: var(--white);
+  }
+
+  #contact-p-mob{
+    display: flex;
+    gap:6px;
+    color: var(--white);
+    font-size: 21px;
+  }
+
+  #contact-mob{
+    color: var(--greeny);
+  }
+
+ 
+
+  #Pre-Pass:hover{
+  color:var(--yellow-green);
+  cursor: pointer;
+  }
+
+  #Pre-Pass:hover::placeholder{
+   color:var(--yellow-green);
+  }
+
+
+  #New-Pass:hover{
+    color:var(--yellow-green);
+    cursor: pointer;
+    }
+  
+   #New-Pass:hover::placeholder{
+     color:var(--yellow-green);
+    }
+
+
+   #New-Pass2:hover{
+      color:var(--yellow-green);
+      cursor: pointer;
+      }
+      
+   #New-Pass2:hover::placeholder{
+      color:var(--yellow-green);
+      }
+
+  #change-pass{
+  border-radius: 3px;
+  background-color: rgb(9, 196, 108);
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 2px solid;
+  }
+
+  #change-pass:hover{
+    color: var(--greeny);
+    background-color: var(--greyblack);
+
+  }
+
+
+  /* para seçme kısmı */
+
+  select {
+
+    /* styling */
+    color: var(--white);
+    background-color: var(--greyblack);
+    border: 2px solid var(--greeny);
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+
+
+  /* arrows */
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--greeny) 50%),
+    linear-gradient(135deg, var(--greeny) 50%, transparent 50%),
+    linear-gradient(to right, var(--greyblack), var(--greyblack));
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image:
+    linear-gradient(45deg, var(--greyblack) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, var(--greyblack) 50%),
+    linear-gradient(to right, var(--greeny), var(--greeny));
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: var(--greeny);
+  outline: 0;
+}
+
+.change-money{
+  display: flex;
+  justify-content: center;
+}
+
+.change-but{
+  display: flex;
+  justify-content: center;
+}
+
+#change-butt{
+  color: var(--greyblack);
+  border-radius: 3px;
+  background-color: rgb(9, 196, 108);
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 2px solid;
+}
+
+
+#change-butt:hover{
+  color: var(--greeny);
+  background-color: var(--greyblack);
+}
+
+.iconz{
+  display: flex;
+  justify-content: center;
+  color:var(--white);
+  font-size: 40px;
+  margin-top: 50px;
+  column-gap: 20px;
+}
+
+
+.footer-bottom {
+  background: var(--gray);
+  padding-block: 25px;
+}
+
+.footer-bottom p {
+  color:white;
+}
+
+.footer-bottom a {
+  color:white;
+}
+
+.copyright {
+  font-size: var(--fs-3);
+  text-align: center;
+}
+
+.copyright a { display: inline-block; }
+
+.copyright a:is(:hover, :focus) { color: var(--greeny); }
+
+
+   .footer-link-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+    .footer { margin-bottom: 0; }
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+/* navbar-button */
+  
+  
+  @media  (max-width: 360px){
+  
+    .navbar-linkz{
+      display:none;
+     }
+  
+     .big-box{
+      flex-wrap: wrap;
+     }
+  
+  }
+  
+  
+  
+  @media  (max-width: 540px){
+  
+    .navbar-linkz{
+      display:none;
+     }
+
+     #contact-p{
+      display: none;
+     }
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media  (max-width: 599px) {  
+      
+   .navbar-linkz{
+    display:none;
+   }
+   
+
+  }
+
+  
+  
+  @media  (max-width: 912px){
+   
+    .navbar-linkz{
+      display:none;
+     }
+
+     
+  }
+  
+  
+  
+  
+  /**
+   * responsive for larger than 600px screen
+   */
+  
+   @media (min-width: 600px) {
+
+    #contact-p-mob{
+      display: none;
+     }
+  
+    /* reused style */
+    .container {
+      margin-inline: auto;
+    }
+  
+   
+  
+    .has-scrollbar > li { min-width: calc(50% - 12.5px); }
+  
+    /* .main2{
+      display: none;
+    } */
+  
+    :root{ --fs-2: 1.875rem; }
+  
+
+    
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+  
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 2.5rem;
+      --fs-5: 0.938rem;
+      --fs-6: 0.875rem;
+  
+    }
+  
+ 
+  
+  
+   
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer { margin-bottom: 0; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+    .main{
+      display:none;
+    }
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 3.125rem;
+      --fs-4: 1.375rem;
+  
+    }
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-2: 2.75rem;
+      --fs-4: 1.5rem;
+  
+    }
+  
+
+  
+  }
+
+  
+    

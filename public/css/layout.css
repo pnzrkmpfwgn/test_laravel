@@ -1,0 +1,712 @@
+:root {
+
+  /**
+   * colors
+   */
+
+  --dark-jungle-green: hsl(188, 63%, 7%);
+  --prussian-blue: hsl(200, 69%, 14%);
+  --raisin-black-1: hsl(227, 29%, 13%);
+  --raisin-black-2: hsl(229, 17%, 19%);
+  --yellow-green: hsl(89, 72%, 45%);
+  --orange-soda: hsl(9, 100%, 62%);
+  --cultured-1: hsl(0, 0%, 93%);
+  --cultured-2: hsl(192, 24%, 96%);
+  --misty-rose: hsl(7, 56%, 91%);
+  --alice-blue: hsl(210, 100%, 97%);
+  --seashell: hsl(8, 100%, 97%);
+  --cadet: hsl(200, 15%, 43%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --opal: hsl(180, 20%, 62%);
+  --greyblack:rgb(34, 33, 33);
+  --greeny: rgb(36,156,76);
+
+  /**
+   * typography
+   */
+
+ 
+
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.375rem;
+  --fs-4: 1.125rem;
+  --fs-5: 0.875rem;
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 100px;
+
+  /**
+   * shadow
+   */
+
+  --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+  --shadow-2: 0 16px 32px hsl(200, 15%, 43%);
+
+}
+
+/* navbar konteynırı */
+  
+header {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    background-color:rgb(34, 33, 33);
+  }
+  
+  
+  /* navbar ve itemleri */
+  
+  /* #navbar-links .icon {
+    display: none;
+  } */
+  
+  header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    list-style-type:none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s ease 0s;
+  }
+  
+  header a:hover {
+    color: rgb(9, 196, 108);
+  }
+    
+  
+  .NCRealEstateLogo{
+    margin-right: auto;
+    width: 88px;
+    height: 80px;
+    border-radius: 50px;
+    clip-path: circle();
+  }
+  
+  
+  
+  .Navbar-I2{
+    font-size: 24px;
+    margin-top: 25px;
+  }
+  
+  .Navbar-I3{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I4{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I5{
+    font-size: 24px;
+    margin-top: 25px;
+    
+  }
+  
+  
+  .Navbar-I6{
+    font-size: 24px;
+    
+  }
+  
+  
+  .Navbar-I7{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 4rem;
+    border: 2px solid;
+    background-color: green;
+    border-radius: 4px;
+    padding: 5px 12px;
+    
+  }
+  
+  .Navbar-I7:hover{
+    background:black;
+    color:green;
+    transition: all 0.5s ease 0s;
+  }
+
+  .Navbar-I8{
+    font-size: 24px;
+  }
+  
+  .Navbar-I8 button{
+    color: white;
+  }
+  
+  .Navbar-I8 button:hover ,.Navbar-I6 button:focus{
+    color: rgb(9, 196, 108);
+  }
+  
+  /* navbar-8 dropdown */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(34, 33, 33);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .show {display:block;}
+
+
+
+  .Navbar-I9{
+    font-size: 24px;
+  }
+  
+  .Navbar-I9 button{
+    color: white;
+  }
+  
+  .Navbar-I9 button:hover ,.Navbar-I6 button:focus{
+    color: rgb(9, 196, 108);
+  }
+  
+  /* navbar-9 dropdown */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(34, 33, 33);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .show {display:block;}
+  
+  .fa-circle-check{
+    display: flex;
+    justify-content: end;
+    margin-right: -22px;
+  }
+
+
+  
+  /* side navbar button */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 33, 33);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(9, 196, 108);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  #navbar-button{
+    color:rgb(9, 196, 108);
+  }
+
+
+  /*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/
+
+
+  /* navbar-button */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  @media  (max-width: 360px){
+    .CoverImg{
+      margin-right: 10px;
+    }
+
+    .navbar-linkz{
+      display:none;
+     }
+    
+    
+     .littlebox{
+      display:none;
+     }
+    
+     .footer-link-box{
+      display: flex;
+      justify-content:center;
+      margin-left: 0px;
+     }
+    
+    
+     .main2{
+      margin-left: 35px;
+     }
+    
+     .property .container {
+      max-width: unset;
+    
+    }
+  }
+
+
+
+
+
+  @media  (max-width: 540px){
+    .CoverImg{
+      margin-left: 12px;
+    }
+
+    .navbar-linkz{
+      display:none;
+     }
+    
+    
+     .littlebox{
+      display:none;
+     }
+    
+     .footer-link-box{
+      display: flex;
+      justify-content:center;
+      margin-left: 0px;
+     }
+    
+    
+     .main2{
+      margin-left: 35px;
+     }
+    
+     .property .container {
+      max-width: unset;
+    
+    }
+    
+    #customer-op{
+      display: none;
+    }
+    
+    .service-list{
+      margin-left: -28px;
+    }
+  }
+  
+  
+
+
+  @media  (max-width: 599px) {  
+    
+    
+    .CoverImg{
+      width: fit-content;
+    }
+  
+    /* header {  
+    flex-wrap: wrap;  
+  }  
+  
+  header > li {  
+    flex-basis: 50%;  
+  }  */
+  
+   .navbar-linkz{
+    display:none;
+   }
+  
+  
+   .littlebox{
+    display:none;
+   }
+  
+   .footer-link-box{
+    display: flex;
+    justify-content:center;
+    margin-left: 0px;
+   }
+  
+   
+  
+  
+   .main2{
+    margin-left: 50px;
+   }
+  
+   .property .container {
+    max-width: unset;
+  
+  }
+  
+  }
+
+
+  @media  (max-width: 912px){
+    .CoverImg{
+      margin-right: 10px;
+    }
+
+    .navbar-linkz{
+      display:none;
+     }
+
+    
+     .littlebox{
+      display:none;
+     }
+    
+     .footer-link-box{
+      display: flex;
+      justify-content:center;
+      margin-left: 0px;
+     }
+    
+    
+     .main2{
+      margin-left: 35px;
+     }
+    
+     .property .container {
+      max-width: unset;
+    
+    }
+  }
+
+
+
+  
+  /**
+   * responsive for larger than 600px screen
+   */
+  
+   @media (min-width: 600px) {
+
+    /* reused style */
+    .container {
+      max-width: 550px;
+      margin-inline: auto;
+    }
+  
+    .has-scrollbar {
+      gap: 25px;
+      margin-inline: -25px;
+      padding-inline: 25px;
+      scroll-padding-left: 25px;
+    }
+  
+    .has-scrollbar > li { min-width: calc(50% - 12.5px); }
+  
+    /* .main2{
+      display: none;
+    } */
+  
+    :root{ --fs-2: 1.875rem; }
+  
+  
+    /* navbar-main
+    .main{
+      display:none;
+    } */
+    
+    /* property */
+    .property .container {
+      max-width: unset;
+      padding-inline: 20px;
+    }
+  
+     /* service */
+    .service-list > li { width: calc(50% - 15px); }
+    
+  
+  
+    /* footer */
+    .footer-link-box {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      
+    }
+    
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+  
+
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 2.5rem;
+      --fs-5: 0.938rem;
+      --fs-6: 0.875rem;
+  
+    }
+
+
+
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 720px; }
+  
+    .btn {
+      --fs-5: 1rem;
+      padding: 12px 28px;
+    }
+  
+
+    /* service */
+.features-list > li { width: calc(32.33% - 13.33px); }
+  
+  
+   
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer { margin-bottom: 0; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+
+    .main2{
+      display: none;
+    }
+
+    .main{
+      display:none;
+    }
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 3.125rem;
+      --fs-4: 1.375rem;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 970px; }
+  
+    .btn { padding: 15px 40px; }
+  
+  
+  
+  
+  
+  
+   
+  
+  
+
+  
+    /**
+     * SERVICE
+     */
+  
+    .service-list > li { width: calc(32.33% - 20px); }
+  
+  
+  
+    /**
+     * PROPERTY
+     */
+  
+    .property-card .card-content { padding-inline: 30px; }
+  
+    .card-footer { padding: 20px 30px 30px; }
+  
+  
+  
+   
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-top .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .footer-brand {
+      max-width: 300px;
+      margin-bottom: 0;
+    }
+  
+    .footer-link-box { flex-basis: 550px; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-2: 2.75rem;
+      --fs-4: 1.5rem;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1200px; }
+  
+    .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
+  
+  
+  
+  
+  
+  
+  
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer { --fs-5: 1rem; }
+  
+    .footer-link-box { flex-basis: 700px; }
+  
+  }
+  

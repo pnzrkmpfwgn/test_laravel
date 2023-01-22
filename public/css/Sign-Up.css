@@ -1,0 +1,152 @@
+:root {
+
+    /**
+     * colors
+     */
+  
+    --dark-jungle-green: hsl(188, 63%, 7%);
+    --prussian-blue: hsl(200, 69%, 14%);
+    --raisin-black-1: hsl(227, 29%, 13%);
+    --raisin-black-2: hsl(229, 17%, 19%);
+    --yellow-green: hsl(89, 72%, 45%);
+    --orange-soda: hsl(9, 100%, 62%);
+    --cultured-1: hsl(0, 0%, 93%);
+    --cultured-2: hsl(192, 24%, 96%);
+    --misty-rose: hsl(7, 56%, 91%);
+    --alice-blue: hsl(210, 100%, 97%);
+    --seashell: hsl(8, 100%, 97%);
+    --cadet: hsl(200, 15%, 43%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --opal: hsl(180, 20%, 62%);
+    --greyblack:rgb(34, 33, 33);
+    --greeny: rgb(36,156,76);
+  
+  
+  }
+
+
+body  
+{  
+    margin: 50;  
+    padding: 0;  
+    background-color:black;   
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 360px;  
+        overflow: hidden;    
+        margin: 0 auto;  
+        padding: 70px;  
+        background: #36454F;     
+        border-radius: 15px ;         
+} 
+
+
+h2{  
+    text-align: center;   
+    color: white;  
+}
+
+img{
+    max-width: 100%;
+}
+
+.baş h2{ 
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+label{  
+    margin-left: 20px;
+    color: white;    
+    font-size: 14px;  
+     
+}  
+#Uname{  
+    margin-left: 20px;
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 8px;  
+    background-color: black;
+}  
+#E-mail{
+    margin-left: 20px;
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 8px; 
+    background-color: black; 
+}  
+#Pass{  
+    margin-left: 20px;
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 5px;  
+    padding-left: 8px;  
+    background-color: black; 
+}
+i{
+    margin-left: -30px; 
+    cursor: pointer;
+    color: white;
+}
+#log{  
+    margin-left: 25px;
+    width: 300px;  
+    height: 35px;  
+    border: none;  
+    border-radius: 10px;  
+    padding-left: 7px;  
+    color: white; 
+    background-color:rgb(9, 196, 108);
+}  
+
+#log:hover{
+ background-color: rgb(34, 33, 33);
+ transition: 0.25s ease-in-out;
+ cursor: pointer;
+ color:rgb(9, 196, 108);
+}
+
+
+
+#Already-Acc:hover{
+    color:rgb(92, 235, 9);
+    transition: 0.25s ease-in-out; 
+}
+
+#togglePassword:hover{
+    color:rgb(9, 196, 108);
+    transition: 0.25s ease-in-out;
+}
+
+p{ 
+    text-align: center;
+    color: white;  
+}
+a{ 
+    text-decoration: none;
+    color: rgb(9, 196, 108);
+}
+
+.Home-button{
+    color:#36454F;
+    border: 2px solid;
+    background-color: rgb(34, 33, 33);
+    border-radius: 4px;
+    padding: 5px 12px;
+}
+
+.Home-button:hover{
+    background:black;
+    color:rgb(9, 196, 108);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+
